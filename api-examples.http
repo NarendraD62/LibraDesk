@@ -1,0 +1,20 @@
+### Health (available after docker compose up --build)
+GET http://localhost:8080/actuator/health
+
+### Search synthetic demo catalog
+GET http://localhost:8080/api/books/search?q=algorithm
+
+### Prefix suggestions
+GET http://localhost:8080/api/books/suggest?prefix=the
+
+### Lookup a demo book
+GET http://localhost:8080/api/books/1
+
+### Search with core explain data
+GET http://localhost:8080/api/books/search?q=algorithm&explain=true
+
+### Compare synthetic index search with linear scan
+GET http://localhost:8080/api/lab/search-compare?q=algorithm
+
+### Structure inventory
+GET http://localhost:8080/api/lab/structure-stats
